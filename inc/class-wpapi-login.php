@@ -76,7 +76,8 @@ if( !class_exists( 'SB_App_Login' ) ) {
 				$return = array(
 					'message' => 'Login successful!',
 					'username' => $info['user_login'],
-					'success' => true
+					'success' => true,
+                                        'all_data' => $user_signon
 				);
 					
 				wp_send_json_success( $return );
